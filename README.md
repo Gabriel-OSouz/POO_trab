@@ -29,4 +29,3 @@ Tarefa 3: Criar uma interface gráfica que facilite a interação do usuário co
 desenvolvido na tarefa 2. Para isso, recursos do pacote Swing ou Awt do Java devem
 ser usados.
 
-## Link para UML : https://www.lucidchart.com/invitations/accept/97a32bd3-9ceb-4ed6-aee0-9cafa0b28df4
