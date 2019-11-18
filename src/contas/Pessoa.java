@@ -1,0 +1,27 @@
+package POO_trab.src.contas
+/**
+ * POO Trab UFU
+ * Class Pessoa
+ * @author Leonardo Marinho de Melo junior
+ * @author Vinicius Lopes Dias
+ * @author Gabriel Oliveira Souza
+ * @version 1.0
+ */
+/* Interface responsavel pela autentificacao */
+interface Log
+{
+	boolean login(String senha);
+}
+public class Pessoa implements Log
+{
+	protected String nome;
+	protected int idade;
+	protected String cpf;
+	protected String rg;
+	protected char sexo;
+	protected char estcivil;
+	protected String escolaridade;
+	protected String datanasc;
+
+}
+
