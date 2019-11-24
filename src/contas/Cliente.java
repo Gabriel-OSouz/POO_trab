@@ -17,4 +17,5 @@ interface Log
 public class Cliente
 {
 	protected ArrayList<Contas> contas;
+	private String senha;
 }
