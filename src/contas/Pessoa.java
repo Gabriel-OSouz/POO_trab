@@ -7,12 +7,8 @@ package POO_trab.src.contas
  * @author Gabriel Oliveira Souza
  * @version 1.0
  */
-/* Interface responsavel pela autentificacao */
-interface Log
-{
-	boolean login(String senha);
-}
-public class Pessoa implements Log
+
+public class Pessoa
 {
 	protected String nome;
 	protected int idade;
@@ -22,6 +18,7 @@ public class Pessoa implements Log
 	protected char estcivil;
 	protected String escolaridade;
 	protected String datanasc;
+	protected boolean ehcliente = false;
 
 }
 
