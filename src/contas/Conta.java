@@ -8,11 +8,15 @@ package POO_trab.src.contas
  * @author Gabriel Oliveira Souza
  * @version 1.0
  */
-/* Interface responsavel pela autentificacao */
-interface Log
+//interface responsavel pelas operacoes em cada conta
+interface transacoes
 {
-	boolean login(String senha);
+	public static double saque(double val);
+	public double transf(Conta alvo, double val);
+	public double deposito(double val);
+
 }
+
 //Classe generica para conta
 public class Conta implements Log
 {
