@@ -1,9 +1,7 @@
-package POO_trab.src.contas
-
 import java.util.ArrayList;
 /**
  * POO Trab UFU
- * Class Conta
+ * Class Cliente
  * @author Leonardo Marinho de Melo junior
  * @author Vinicius Lopes Dias
  * @author Gabriel Oliveira Souza
@@ -16,6 +14,6 @@ interface Log
 }
 public class Cliente
 {
-	protected ArrayList<Contas> contas;
+	protected ArrayList<Conta> contas;
 	private String senha;
 }

@@ -1,4 +1,3 @@
-package POO_trab.src.contas
 /**
  * POO Trab UFU
  * Class Funcionario
@@ -12,6 +11,7 @@ public class Funcionario extends Pessoa implements Log
 	protected String cargo;
         protected double salario;
 	protected String ctps;
+	public boolean login(String senha){ return true;}
 }
 
 
