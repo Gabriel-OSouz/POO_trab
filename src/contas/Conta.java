@@ -1,5 +1,3 @@
-package POO_trab.src.contas
-
 /**
  * POO Trab UFU
  * Class Conta
@@ -11,9 +9,9 @@ package POO_trab.src.contas
 //interface responsavel pelas operacoes em cada conta
 interface transacoes
 {
-	public static double saque(double val);
-	public double transf(Conta alvo, double val);
-	public double deposito(double val);
+	double saque(double val);
+	double transf(Conta alvo, double val);
+	double deposito(double val);
 
 }
 
@@ -24,6 +22,7 @@ public class Conta implements Log
     protected String dataemissao;
     protected String datamov;
     private boolean ativa;
+    public boolean login(String senha){ return true;}
     
 }
 //classe com os atributos de uma conta salario

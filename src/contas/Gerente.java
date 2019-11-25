@@ -1,4 +1,3 @@
-package POO_trab.src.contas
 /**
  * POO Trab UFU
  * Class Gerente
