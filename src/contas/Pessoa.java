@@ -18,6 +18,7 @@ public class Pessoa
 	protected String escolaridade;
 	protected String datanasc;
 	protected boolean ehcliente = false;
+	protected boolean ehfunc = false;
 
 }
 
