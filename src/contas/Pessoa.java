@@ -9,16 +9,15 @@
 
 public class Pessoa
 {
-	protected String nome;
-	protected int idade;
-	protected String cpf;
-	protected String rg;
-	protected char sexo;
-	protected char estcivil;
-	protected String escolaridade;
-	protected String datanasc;
-	protected boolean ehcliente = false;
-	protected boolean ehfunc = false;
+	private String nome;
+	private String cpf;
+	private String rg;
+	private char sexo;
+	private char estcivil;
+	private String escolaridade;
+	private String datanasc;
+	private boolean ehcliente = false;
+	private boolean ehfunc = false;
 
 }
 

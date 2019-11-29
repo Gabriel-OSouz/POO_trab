@@ -8,3 +8,10 @@ package POO_trab.src.ext
  * @version 1.0
  */
 
+public class Agencia
+{
+	private final int num;
+	private String gerente;	
+	private Endereco end;
+	public String nomefic;
+}
