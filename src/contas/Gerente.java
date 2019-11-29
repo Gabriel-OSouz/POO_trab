@@ -13,3 +13,16 @@ public class Gerente extends Funcionario
 	private String agencia;
 	private String formacao;
 }
+
+//Getter and setters
+    public String getDataingresso(){return dataingresso;}
+
+    public void setDataingresso(String dataingresso){this.dataingresso = dataingresso;}
+
+    public String getAgencia(){return agencia;}
+
+    public void setAgencia(String agencia){this.agencia = agencia;}
+
+    public String getFormacao(){return formacao;}
+
+    public void setFormacao(String formacao){this.formacao = formacao;}
