@@ -7,7 +7,6 @@ package views;
 
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
-
 /**
  *
  * @author vinil
