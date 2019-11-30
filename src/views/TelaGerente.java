@@ -11,12 +11,12 @@ import javax.swing.JOptionPane;
  *
  * @author vinil
  */
-public class TelaPrincipal extends javax.swing.JFrame {
+public class TelaGerente extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaPrincipal
      */
-    public TelaPrincipal() {
+    public TelaGerente() {
         initComponents();
     }
 
@@ -31,29 +31,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         barraMenu = new javax.swing.JMenuBar();
         arquivoMenu = new javax.swing.JMenu();
-        selectUser = new javax.swing.JMenuItem();
-        login = new javax.swing.JMenuItem();
         saveExit = new javax.swing.JMenuItem();
         cadatrarMenu = new javax.swing.JMenu();
-        cadastroAgencia = new javax.swing.JMenuItem();
         cadastroConta = new javax.swing.JMenuItem();
-        cadastroFuncionario = new javax.swing.JMenuItem();
         cadastroCliente = new javax.swing.JMenuItem();
-        removerMenu = new javax.swing.JMenu();
-        removeAgencia = new javax.swing.JMenuItem();
-        removeConta = new javax.swing.JMenuItem();
-        removeFuncionario = new javax.swing.JMenuItem();
-        removeCliente = new javax.swing.JMenuItem();
         editarMenu = new javax.swing.JMenu();
-        editaAgencia = new javax.swing.JMenuItem();
         editaConta = new javax.swing.JMenuItem();
-        editaFuncionario = new javax.swing.JMenuItem();
         editaCliente = new javax.swing.JMenuItem();
-        transacaoMenu = new javax.swing.JMenu();
-        transacaoSaque = new javax.swing.JMenuItem();
-        transacaoDeposito = new javax.swing.JMenuItem();
-        transacaoTranferencia = new javax.swing.JMenuItem();
-        transacaoPagamento = new javax.swing.JMenuItem();
+        removeMenu = new javax.swing.JMenu();
+        removeCliente = new javax.swing.JMenuItem();
+        removeConta = new javax.swing.JMenuItem();
         ajudaMenu = new javax.swing.JMenu();
         ajudaSobre = new javax.swing.JMenuItem();
 
@@ -62,95 +49,65 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         arquivoMenu.setText("Arquivo");
 
-        selectUser.setText("Selecionar tipo do Usuário");
-        selectUser.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                selectUserActionPerformed(evt);
-            }
-        });
-        arquivoMenu.add(selectUser);
-
-        login.setText("Logar");
-        login.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loginActionPerformed(evt);
-            }
-        });
-        arquivoMenu.add(login);
-
         saveExit.setText("Salvar e Sair");
+        saveExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveExitActionPerformed(evt);
+            }
+        });
         arquivoMenu.add(saveExit);
 
         barraMenu.add(arquivoMenu);
 
         cadatrarMenu.setText("Cadastrar");
 
-        cadastroAgencia.setText("Agência");
-        cadastroAgencia.addActionListener(new java.awt.event.ActionListener() {
+        cadastroConta.setText("Conta");
+        cadastroConta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cadastroAgenciaActionPerformed(evt);
+                cadastroContaActionPerformed(evt);
             }
         });
-        cadatrarMenu.add(cadastroAgencia);
-
-        cadastroConta.setText("Conta");
         cadatrarMenu.add(cadastroConta);
 
-        cadastroFuncionario.setText("Funcionario");
-        cadatrarMenu.add(cadastroFuncionario);
-
         cadastroCliente.setText("Cliente");
+        cadastroCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cadastroClienteActionPerformed(evt);
+            }
+        });
         cadatrarMenu.add(cadastroCliente);
 
         barraMenu.add(cadatrarMenu);
 
-        removerMenu.setText("Remover");
-
-        removeAgencia.setText("Agência");
-        removerMenu.add(removeAgencia);
-
-        removeConta.setText("Conta");
-        removerMenu.add(removeConta);
-
-        removeFuncionario.setText("Funcionário");
-        removerMenu.add(removeFuncionario);
-
-        removeCliente.setText("Cliente");
-        removerMenu.add(removeCliente);
-
-        barraMenu.add(removerMenu);
-
         editarMenu.setText("Editar");
-
-        editaAgencia.setText("Agência");
-        editarMenu.add(editaAgencia);
 
         editaConta.setText("Conta");
         editarMenu.add(editaConta);
-
-        editaFuncionario.setText("Funcionário");
-        editarMenu.add(editaFuncionario);
 
         editaCliente.setText("Cliente");
         editarMenu.add(editaCliente);
 
         barraMenu.add(editarMenu);
 
-        transacaoMenu.setText("Transação");
+        removeMenu.setText("Remover");
 
-        transacaoSaque.setText("Saque");
-        transacaoMenu.add(transacaoSaque);
+        removeCliente.setText("Cliente");
+        removeCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeClienteActionPerformed(evt);
+            }
+        });
+        removeMenu.add(removeCliente);
 
-        transacaoDeposito.setText("Depósito");
-        transacaoMenu.add(transacaoDeposito);
+        removeConta.setText("Conta");
+        removeConta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeContaActionPerformed(evt);
+            }
+        });
+        removeMenu.add(removeConta);
 
-        transacaoTranferencia.setText("Transferência");
-        transacaoMenu.add(transacaoTranferencia);
-
-        transacaoPagamento.setText("Pagamento");
-        transacaoMenu.add(transacaoPagamento);
-
-        barraMenu.add(transacaoMenu);
+        barraMenu.add(removeMenu);
 
         ajudaMenu.setText("Ajuda");
         ajudaMenu.addActionListener(new java.awt.event.ActionListener() {
@@ -182,33 +139,57 @@ public class TelaPrincipal extends javax.swing.JFrame {
             .addGap(0, 280, Short.MAX_VALUE)
         );
 
-        pack();
+        setSize(new java.awt.Dimension(416, 341));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void selectUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectUserActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_selectUserActionPerformed
-
-    private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_loginActionPerformed
-
-    private void cadastroAgenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastroAgenciaActionPerformed
-        CadastroAgencia cadAgencia = new CadastroAgencia(this, true);
-        cadAgencia.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
-        cadAgencia.setTitle("Cadastro de Agências");
-        cadAgencia.setLocationRelativeTo(null);
-        cadAgencia.setResizable(false);
-        cadAgencia.setVisible(true);
-    }//GEN-LAST:event_cadastroAgenciaActionPerformed
 
     private void ajudaMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ajudaMenuActionPerformed
         
     }//GEN-LAST:event_ajudaMenuActionPerformed
 
     private void ajudaSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ajudaSobreActionPerformed
-        JOptionPane.showMessageDialog(null, "Bem vindo ao Banco DBC, selecione o tipo de usuário e depois faça o login.");
+        JOptionPane.showMessageDialog(null, "Bem vindo ao Banco DBC, selecione a operação.");
     }//GEN-LAST:event_ajudaSobreActionPerformed
+
+    private void saveExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveExitActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_saveExitActionPerformed
+
+    private void cadastroContaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastroContaActionPerformed
+        CadastroConta cadConta = new CadastroConta(this, true);
+        cadConta.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+        cadConta.setTitle("Cadastro da Conta");
+        cadConta.setLocationRelativeTo(null);
+        cadConta.setResizable(false);
+        cadConta.setVisible(true);
+    }//GEN-LAST:event_cadastroContaActionPerformed
+
+    private void cadastroClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastroClienteActionPerformed
+        CadastroCliente cadCliente = new CadastroCliente(this, true);
+        cadCliente.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+        cadCliente.setTitle("Cadastro do Cliente");
+        cadCliente.setLocationRelativeTo(null);
+        cadCliente.setResizable(false);
+        cadCliente.setVisible(true);
+    }//GEN-LAST:event_cadastroClienteActionPerformed
+
+    private void removeClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeClienteActionPerformed
+        RemoveCliente remCliente = new RemoveCliente(this, true);
+        remCliente.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+        remCliente.setTitle("Remoção Cliente");
+        remCliente.setLocationRelativeTo(null);
+        remCliente.setResizable(false);
+        remCliente.setVisible(true);
+    }//GEN-LAST:event_removeClienteActionPerformed
+
+    private void removeContaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeContaActionPerformed
+        RemoveConta remConta = new RemoveConta(this, true);
+        remConta.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+        remConta.setTitle("Remoção Conta");
+        remConta.setLocationRelativeTo(null);
+        remConta.setResizable(false);
+        remConta.setVisible(true);
+    }//GEN-LAST:event_removeContaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -227,21 +208,24 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaGerente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaGerente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaGerente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaGerente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-//                new TelaPrincipal().setVisible(true);
-                TelaPrincipal telaPrincipal = new TelaPrincipal();
+//                new TelaAdmin().setVisible(true);
+                TelaGerente telaPrincipal = new TelaGerente();
                 telaPrincipal.setLocationRelativeTo(null);
                 telaPrincipal.setVisible(true);
             }
@@ -253,28 +237,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem ajudaSobre;
     private javax.swing.JMenu arquivoMenu;
     private javax.swing.JMenuBar barraMenu;
-    private javax.swing.JMenuItem cadastroAgencia;
     private javax.swing.JMenuItem cadastroCliente;
     private javax.swing.JMenuItem cadastroConta;
-    private javax.swing.JMenuItem cadastroFuncionario;
     private javax.swing.JMenu cadatrarMenu;
-    private javax.swing.JMenuItem editaAgencia;
     private javax.swing.JMenuItem editaCliente;
     private javax.swing.JMenuItem editaConta;
-    private javax.swing.JMenuItem editaFuncionario;
     private javax.swing.JMenu editarMenu;
-    private javax.swing.JMenuItem login;
-    private javax.swing.JMenuItem removeAgencia;
     private javax.swing.JMenuItem removeCliente;
     private javax.swing.JMenuItem removeConta;
-    private javax.swing.JMenuItem removeFuncionario;
-    private javax.swing.JMenu removerMenu;
+    private javax.swing.JMenu removeMenu;
     private javax.swing.JMenuItem saveExit;
-    private javax.swing.JMenuItem selectUser;
-    private javax.swing.JMenuItem transacaoDeposito;
-    private javax.swing.JMenu transacaoMenu;
-    private javax.swing.JMenuItem transacaoPagamento;
-    private javax.swing.JMenuItem transacaoSaque;
-    private javax.swing.JMenuItem transacaoTranferencia;
     // End of variables declaration//GEN-END:variables
 }

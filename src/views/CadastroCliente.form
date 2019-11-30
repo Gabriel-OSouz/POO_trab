@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Cadastro da Ag&#xea;ncia"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="painelNavegacao" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="painelNavegacao" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="painelNavegacao">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Dados do Cliente"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lbNome" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="213" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lbCPF" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="txCPF" min="-2" pref="164" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="lbNumAgencia" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txEscolaridade" min="-2" pref="155" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Component id="txNomeAg" alignment="0" min="-2" pref="164" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="txEstadoCivil" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="lbEstadoCivil" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="185" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="lbDataNascimento" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
+                                  <Component id="lbEscolaridade" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="txDataNascimento" min="-2" pref="163" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txEstado" min="-2" pref="155" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lbEstado" min="-2" max="-2" attributes="0"/>
+                                          <Component id="txNumAgencia" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="lbBairro" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="txCEPAg" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txLogradouro" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txBairro" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lbCEP" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbLogradouro" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="185" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="lbCidade" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbComplemento" max="32767" attributes="0"/>
+                              <Component id="txNumEnd" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txComplemento" max="32767" attributes="0"/>
+                              <Component id="txCidade" alignment="0" min="-2" pref="136" max="-2" attributes="0"/>
+                              <Component id="lbNumEnd" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
+                  <Component id="btnCadastrarAg" linkSize="1" min="-2" pref="110" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="btnSair" linkSize="1" min="-2" pref="110" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lbNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbCPF" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbEscolaridade" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txNomeAg" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txCPF" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txEscolaridade" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lbDataNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbNumAgencia" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="lbEstadoCivil" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txEstadoCivil" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txDataNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txNumAgencia" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lbCEP" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                          <Component id="lbNumEnd" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbEstado" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txCEPAg" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txNumEnd" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txEstado" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lbLogradouro" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                      <Component id="lbComplemento" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txLogradouro" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txComplemento" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lbBairro" alignment="3" min="-2" pref="9" max="-2" attributes="0"/>
+                      <Component id="lbCidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txBairro" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txCidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btnCadastrarAg" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnSair" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="42" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="lbCPF">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="CPF"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbNome">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Nome"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txCPF">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txCPFActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txNomeAg">
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbCEP">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="CEP"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbLogradouro">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Logradouro"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbBairro">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Bairro"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbEstado">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Estado"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbNumEnd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="N&#xfa;mero"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbComplemento">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Complemento"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbCidade">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cidade"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txCEPAg">
+        </Component>
+        <Component class="javax.swing.JTextField" name="txLogradouro">
+        </Component>
+        <Component class="javax.swing.JTextField" name="txBairro">
+        </Component>
+        <Component class="javax.swing.JTextField" name="txEstado">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txEstadoActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txNumEnd">
+        </Component>
+        <Component class="javax.swing.JTextField" name="txComplemento">
+        </Component>
+        <Component class="javax.swing.JTextField" name="txCidade">
+        </Component>
+        <Component class="javax.swing.JButton" name="btnCadastrarAg">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cadastrar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCadastrarAgActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnSair">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sair"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSairActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbEstadoCivil">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Estado Civil"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbDataNascimento">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Data de Nascimento"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txEstadoCivil">
+        </Component>
+        <Component class="javax.swing.JTextField" name="txDataNascimento">
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbEscolaridade">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Escolaridade"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbNumAgencia">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="N&#xfa;mero Ag&#xea;ncia"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txEscolaridade">
+        </Component>
+        <Component class="javax.swing.JTextField" name="txNumAgencia">
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

@@ -1,3 +1,5 @@
+package model;
+
 /**
  * POO Trab UFU
  * Class Admin
@@ -7,9 +9,26 @@
  * @version 1.0
  */
 
-public class Admin implements Log
+public class Admin
 {
-	public boolean login(String senha){ return true;}
+	private String cpf;
+	private String senha;
+	
+	public Admin(String cpf, String senha) {
+		this.cpf = cpf;
+		this.senha = senha;
+	}
+	public String getCpf() {
+		return cpf;
+	}
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
 
 }
-
