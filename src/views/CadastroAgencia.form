@@ -24,10 +24,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <Component id="painelNavegacao" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-          </Group>
+          <Component id="painelNavegacao" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -52,66 +49,73 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="jSeparator1" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="btnSair" linkSize="1" min="-2" pref="110" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="361" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="txNomeAg" min="-2" pref="164" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="txNumAg" min="-2" pref="164" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lbCEP" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbLogradouro" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbEstado" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="187" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="lbCidade" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lbComplemento" max="32767" attributes="0"/>
-                                          <Component id="lbNumEnd" min="-2" max="-2" attributes="0"/>
-                                          <Component id="txNumEnd" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jSeparator1" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="btnCadastrarAg" linkSize="1" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="lbBairro" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="txCEPAg" alignment="0" pref="161" max="32767" attributes="0"/>
+                                          <Component id="txLogradouro" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txBairro" alignment="0" max="32767" attributes="0"/>
                                       </Group>
-                                      <Component id="txComplemento" min="-2" pref="136" max="-2" attributes="0"/>
-                                      <Component id="txCidade" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="lbNome" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="235" max="-2" attributes="0"/>
-                                          <Component id="lbNumero" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="lbCEP" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lbLogradouro" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jTextFieldPesquisa" min="-2" pref="232" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jButtonPesquisa" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Component id="lbCidade" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="lbComplemento" max="32767" attributes="0"/>
+                                                      <Component id="lbNumEnd" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txNumEnd" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txComplemento" pref="136" max="32767" attributes="0"/>
+                                                      <Component id="txCidade" alignment="0" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="lbEstado" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txEstado" min="-2" pref="161" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
                                       </Group>
-                                      <Component id="txGerenteAg" alignment="0" min="-2" pref="164" max="-2" attributes="0"/>
-                                      <Component id="lbGerente" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="txNomeAg" alignment="0" min="-2" pref="164" max="-2" attributes="0"/>
+                                              <Component id="lbNome" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="lbNumero" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="205" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="txGerenteAg" min="-2" pref="164" max="-2" attributes="0"/>
+                                                      <Component id="lbGerente" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Component id="txNumAg" min="-2" pref="164" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                                  <Component id="btnCadastrarAg" linkSize="1" min="-2" pref="110" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="btnSair" linkSize="1" min="-2" pref="110" max="-2" attributes="0"/>
-                              </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="lbBairro" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="txCEPAg" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txLogradouro" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txBairro" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txEstadi" alignment="0" pref="161" max="32767" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -121,35 +125,44 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lbNome" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lbNumero" alignment="3" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lbNumero" alignment="1" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lbNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbGerente" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="txNomeAg" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txNumAg" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txGerenteAg" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-                  <Component id="lbGerente" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                  <Component id="txGerenteAg" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="jSeparator1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lbNumEnd" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lbCEP" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbEstado" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="txCEPAg" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txNumEnd" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lbLogradouro" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                      <Component id="lbComplemento" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txCEPAg" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txNumEnd" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lbLogradouro" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                              <Component id="lbComplemento" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          <Component id="txEstado" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -166,16 +179,18 @@
                       <Component id="txBairro" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txCidade" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                  <Component id="lbEstado" min="-2" pref="14" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="txEstadi" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="btnCadastrarAg" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnCadastrarAg" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnSair" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextFieldPesquisa" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonPesquisa" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="196" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnSair" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -197,6 +212,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txNumAg">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txNumAgActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txNomeAg">
         </Component>
@@ -245,7 +263,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txBairro">
         </Component>
-        <Component class="javax.swing.JTextField" name="txEstadi">
+        <Component class="javax.swing.JTextField" name="txEstado">
         </Component>
         <Component class="javax.swing.JTextField" name="txNumEnd">
         </Component>
@@ -257,6 +275,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Cadastrar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCadastrarAgActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnSair">
           <Properties>
@@ -265,6 +286,32 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSairActionPerformed"/>
           </Events>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="jTable1">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="2" rowCount="4">
+                    <Column editable="true" title="N&#xfa;mero Ag&#xea;ncia" type="java.lang.Object"/>
+                    <Column editable="true" title="Nome Ag&#xea;ncia" type="java.lang.Object"/>
+                  </Table>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JTextField" name="jTextFieldPesquisa">
+        </Component>
+        <Component class="javax.swing.JButton" name="jButtonPesquisa">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Pesquisar"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

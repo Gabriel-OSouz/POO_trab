@@ -9,26 +9,13 @@
             <Property name="text" type="java.lang.String" value="Arquivo"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="selectUser">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Selecionar tipo do Usu&#xe1;rio"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="selectUserActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="login">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Logar"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="loginActionPerformed"/>
-              </Events>
-            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="saveExit">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Salvar e Sair"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveExitActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -37,55 +24,21 @@
             <Property name="text" type="java.lang.String" value="Cadastrar"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="cadastroAgencia">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Ag&#xea;ncia"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cadastroAgenciaActionPerformed"/>
-              </Events>
-            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="cadastroConta">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Conta"/>
               </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="cadastroFuncionario">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Funcionario"/>
-              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cadastroContaActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="cadastroCliente">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Cliente"/>
               </Properties>
-            </MenuItem>
-          </SubComponents>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="removerMenu">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Remover"/>
-          </Properties>
-          <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="removeAgencia">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Ag&#xea;ncia"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="removeConta">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Conta"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="removeFuncionario">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Funcion&#xe1;rio"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="removeCliente">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Cliente"/>
-              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cadastroClienteActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -94,19 +47,9 @@
             <Property name="text" type="java.lang.String" value="Editar"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="editaAgencia">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Ag&#xea;ncia"/>
-              </Properties>
-            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="editaConta">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Conta"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="editaFuncionario">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Funcion&#xe1;rio"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="editaCliente">
@@ -116,30 +59,26 @@
             </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="transacaoMenu">
+        <Menu class="javax.swing.JMenu" name="removeMenu">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Transa&#xe7;&#xe3;o"/>
+            <Property name="text" type="java.lang.String" value="Remover"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="transacaoSaque">
+            <MenuItem class="javax.swing.JMenuItem" name="removeCliente">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Saque"/>
+                <Property name="text" type="java.lang.String" value="Cliente"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeClienteActionPerformed"/>
+              </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="transacaoDeposito">
+            <MenuItem class="javax.swing.JMenuItem" name="removeConta">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Dep&#xf3;sito"/>
+                <Property name="text" type="java.lang.String" value="Conta"/>
               </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="transacaoTranferencia">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Transfer&#xea;ncia"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="transacaoPagamento">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Pagamento"/>
-              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeContaActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -170,8 +109,10 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="menuBar" type="java.lang.String" value="barraMenu"/>
-    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+    <SyntheticProperty name="formSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,85,0,0,1,-96"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="0"/>
+    <SyntheticProperty name="generateSize" type="boolean" value="true"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
