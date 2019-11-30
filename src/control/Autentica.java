@@ -65,10 +65,11 @@ public class Autentica
 		try
 		{
 			reader = new BufferedReader(new FileReader(gettipo()+".txt"));
-			String line[] = reader.readLine().split(",");
+			String line = reader.readLine();
 			while(line != null){
-				if(line[0] == getcpf()){
-					if(line[1] == getsenha()){
+				String parts[] = line.split(",");
+				if(parts[0].equals( getcpf())){
+					if(parts[1].equals(getsenha())){
 						reader.close();
 						return 0;
 					}else{
@@ -76,6 +77,7 @@ public class Autentica
 						return 2;
 				        }
 				}
+				line = reader.readLine();
 			}
 			reader.close();
 			return 3;
