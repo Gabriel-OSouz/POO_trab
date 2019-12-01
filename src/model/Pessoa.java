@@ -1,16 +1,18 @@
-package model;
+//package POO_trab.src.model;
 
 public class Pessoa {
 	private String CPF;
+	private String senha;
 	private String nome;
 	private Endereco end;
 	private String estadoCivil;
 	private String dataNascimento;
 	
-	public Pessoa(String cPF, String nome, Endereco end, String estadoCivil, String dataNascimento) {
-		super();
+	public Pessoa(String cPF,String senha, String nome, Endereco end, String estadoCivil, String dataNascimento)
+	{	
 		CPF = cPF;
-		this.nome = nome;
+		this.senha = String.valueOf(senha);
+		this.nome = String.valueOf(nome);
 		this.end = end;
 		this.estadoCivil = estadoCivil;
 		this.dataNascimento = dataNascimento;
@@ -44,5 +46,14 @@ public class Pessoa {
 	}
 	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
+	}
+	public void setSenha(String senha)
+	{
+		String csenha = String.valueOf(senha);
+		this.senha = csenha;
+	}
+	public String getSenha()
+	{
+		return this.senha;
 	}
 }

@@ -1,15 +1,15 @@
-package model;
+//package POO_trab.src.model;
 
 import java.util.ArrayList;
 
 public class Cliente extends Pessoa {
 	private ArrayList<Integer> contas;
-	private int numAgencia;
+	private  String numAgencia;
 	private String escolaridade;
 	
 	
-	public Cliente(String cPF, String nome, Endereco end, String estadoCivil, String dataNascimento, int numAgencia, String escolaridade) {
-		super(cPF, nome, end, estadoCivil, dataNascimento);
+	public Cliente(String cPF,String senha, String nome, Endereco end, String estadoCivil, String dataNascimento,  String numAgencia, String escolaridade) {
+		super(cPF,senha, nome, end, estadoCivil, dataNascimento);
 		this.numAgencia = numAgencia;
 		this.escolaridade = escolaridade;
 	}
@@ -25,10 +25,10 @@ public class Cliente extends Pessoa {
 	public void removeConta(int numConta) {
 		this.contas.remove(numConta);
 	}
-	public int getNumAgencia() {
+	public String getNumAgencia() {
 		return numAgencia;
 	}
-	public void setNumAgencia(int numAgencia) {
+	public void setNumAgencia( String numAgencia) {
 		this.numAgencia = numAgencia;
 	}
 	public String getEscolaridade() {

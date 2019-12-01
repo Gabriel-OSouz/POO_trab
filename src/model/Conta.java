@@ -1,19 +1,18 @@
-package model;
+//package POO_trab.src.model;
 
 import java.util.ArrayList;
 
 public class Conta {
-	private ArrayList<Integer> clientes;
-	private int numAgencia;
+	private String numAgencia;
 	private String senha;
 	private boolean ativa;
-	private int numConta;
+        private String numConta;
 	private double saldoAtual;
 	private String dataAbertura;
 	private String DataUltMovimentacao;
 	private ArrayList<Transacao> transacoes;
 	
-	public Conta(int numAgencia, String senha, int numConta, String dataAbertura) {
+	public Conta(String numAgencia, String senha, String numConta, String dataAbertura) {
 		this.numAgencia = numAgencia;
 		this.senha = senha;
 		this.ativa = true;
@@ -22,23 +21,12 @@ public class Conta {
 		this.dataAbertura = dataAbertura;
 	}
 
-	public ArrayList<Integer> getClientes() {
-		return clientes;
-	}
 	
-	public void addCliente(int cpfCliente) {
-		this.clientes.add(cpfCliente);
-	}
-	
-	public void setClientes(ArrayList<Integer> clientes) {
-		this.clientes = clientes;
-	}
-
-	public int getNumAgencia() {
+	public String getnumAgencia() {
 		return numAgencia;
 	}
 
-	public void setNumAgencia(int numAgencia) {
+	public void setnumAgencia(String numAgencia) {
 		this.numAgencia = numAgencia;
 	}
 
@@ -50,19 +38,16 @@ public class Conta {
 		this.senha = senha;
 	}
 
-	public boolean isAtiva() {
-		return ativa;
-	}
-
+        public boolean getAtiva(){ return this.ativa; }
 	public void setAtiva(boolean ativa) {
 		this.ativa = ativa;
 	}
 
-	public int getNumConta() {
+	public String getnumConta() {
 		return numConta;
 	}
 
-	public void setNumConta(int numConta) {
+	public void setnumConta(String numConta) {
 		this.numConta = numConta;
 	}
 
@@ -85,7 +70,6 @@ public class Conta {
 	public String getDataUltMovimentacao() {
 		return DataUltMovimentacao;
 	}
-
 	public void setDataUltMovimentacao(String dataUltMovimentacao) {
 		DataUltMovimentacao = dataUltMovimentacao;
 	}

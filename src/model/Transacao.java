@@ -1,4 +1,4 @@
-package model;
+//package POO_trab.src.model;
 
 public class Transacao {
 	private String tipo;

@@ -1,4 +1,4 @@
-package model;
+//package POO_trab.src.model;
 
 public interface Transacoes {
 	public boolean saque(double val);

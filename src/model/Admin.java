@@ -1,4 +1,4 @@
-package model;
+package POO_trab.src.model;
 
 /**
  * POO Trab UFU

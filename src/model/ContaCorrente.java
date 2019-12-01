@@ -1,10 +1,10 @@
-package model;
+//package POO_trab.src.model;
 
 public class ContaCorrente extends Conta implements Transacoes{
 	private double limiteChequeEsp;
 	private double taxaAdm;
 	
-	public ContaCorrente(int numAgencia, String senha, int numConta, String dataAbertura) {
+	public ContaCorrente(String numAgencia, String senha, String numConta, String dataAbertura) {
 		super(numAgencia, senha, numConta, dataAbertura);
 		this.limiteChequeEsp = 1500;
 		this.taxaAdm = 20;

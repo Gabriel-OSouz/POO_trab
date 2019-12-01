@@ -1,4 +1,4 @@
-package model;
+//package POO_trab.src.model;
 
 public class Funcionario extends Pessoa{
 	private String CPTS;
@@ -6,9 +6,9 @@ public class Funcionario extends Pessoa{
 	private char sexo;
 	private String cargo;
 	private double salario;
-	public Funcionario(String cPF, String nome, Endereco end, String estadoCivil, String dataNascimento, String cPTS,
+	public Funcionario(String cPF,String senha, String nome, Endereco end, String estadoCivil, String dataNascimento, String cPTS,
 			String rG, char sexo, String cargo, double salario) {
-		super(cPF, nome, end, estadoCivil, dataNascimento);
+		super(cPF,senha, nome, end, estadoCivil, dataNascimento);
 		CPTS = cPTS;
 		RG = rG;
 		this.sexo = sexo;
@@ -19,25 +19,29 @@ public class Funcionario extends Pessoa{
 		return CPTS;
 	}
 	public void setCPTS(String cPTS) {
-		CPTS = cPTS;
+		String cCPTS = String.valueOf(cPTS);
+		this.CPTS = cCPTS;
 	}
 	public String getRG() {
 		return RG;
 	}
 	public void setRG(String rG) {
-		RG = rG;
+		String cRG = String.valueOf(rG);
+		this.RG = cRG;
 	}
 	public char getSexo() {
 		return sexo;
 	}
 	public void setSexo(char sexo) {
-		this.sexo = sexo;
+		char csexo = Character.valueOf(sexo);
+		this.sexo = csexo;
 	}
 	public String getCargo() {
 		return cargo;
 	}
 	public void setCargo(String cargo) {
-		this.cargo = cargo;
+		String ccargo = String.valueOf(cargo);
+		this.cargo = ccargo;
 	}
 	public double getSalario() {
 		return salario;

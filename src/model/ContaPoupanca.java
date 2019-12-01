@@ -1,9 +1,9 @@
-package model;
+//package POO_trab.src.model;
 
 public class ContaPoupanca extends Conta implements Transacoes {
 	private double rendimentoMesAtual;
 
-	public ContaPoupanca(int numAgencia, String senha, int numConta, String dataAbertura) {
+	public ContaPoupanca(String numAgencia, String senha, String numConta, String dataAbertura) {
 		super(numAgencia, senha, numConta, dataAbertura);
 	}
 

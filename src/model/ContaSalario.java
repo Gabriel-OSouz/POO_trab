@@ -1,10 +1,10 @@
-package model;
+//package POO_trab.src.model;
 
 public class ContaSalario extends Conta implements Transacoes {
 	private double limiteSaque;
 	private double limiteTransferencia;
 	
-	public ContaSalario(int numAgencia, String senha, int numConta, String dataAbertura) {
+	public ContaSalario(String numAgencia, String senha, String numConta, String dataAbertura) {
 		super(numAgencia, senha, numConta, dataAbertura);
 		this.limiteSaque = 500;
 		this.limiteTransferencia = 1000;
