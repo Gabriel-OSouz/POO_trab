@@ -6,14 +6,16 @@ public class Funcionario extends Pessoa{
 	private char sexo;
 	private String cargo;
 	private double salario;
+	private String numAgencia;
 	public Funcionario(String cPF,String senha, String nome, Endereco end, String estadoCivil, String dataNascimento, String cPTS,
-			String rG, char sexo, String cargo, double salario) {
+			String rG, char sexo, String cargo, double salario, String numAgencia) {
 		super(cPF,senha, nome, end, estadoCivil, dataNascimento);
 		CPTS = cPTS;
 		RG = rG;
 		this.sexo = sexo;
 		this.cargo = cargo;
 		this.salario = salario;
+		this.numAgencia = numAgencia;
 	}
 	public String getCPTS() {
 		return CPTS;
@@ -49,6 +51,11 @@ public class Funcionario extends Pessoa{
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
-	
+		public String getNumAgencia() {
+		return numAgencia;
+	}
+	public void setNumAgencia(String numAgencia) {
+		this.numAgencia = numAgencia;
+	}
 	
 }

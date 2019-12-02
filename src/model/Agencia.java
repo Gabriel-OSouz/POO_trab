@@ -2,21 +2,23 @@
 
 public class Agencia
 {
-	private  String num;
+	private String num;
 	private String nomeFicticio;	
 	private Endereco end;
 	private String cpfGerente;
+	private boolean ativa;
 	
 	public Agencia( String num, String nomeFicticio, Endereco end, String cpfGerente){
 		this.num = num;
 		this.nomeFicticio = nomeFicticio;
 		this.end = end;
 		this.cpfGerente = cpfGerente;
+		this.ativa = true;
 	}
-	public String getnum() {
+	public String getNumAgencia() {
 	       return num;
 	}
-	public void setnum( String num) {
+	public void setNumAgencia(String num) {
 		this.num = num;
 	}
 	public String getnomeFicticio() {
@@ -36,5 +38,11 @@ public class Agencia
 	}
 	public void setcpfGerente(String cpfGerente) {
 		this.cpfGerente = cpfGerente;
+	}
+	public void setAtiva(boolean ativa){
+		this.ativa = ativa;
+	}
+	public boolean getAtiva(){
+		return this.ativa;
 	}
 }

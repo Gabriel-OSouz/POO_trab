@@ -7,7 +7,7 @@ public class Pessoa {
 	private Endereco end;
 	private String estadoCivil;
 	private String dataNascimento;
-	
+        private boolean ativa;	
 	public Pessoa(String cPF,String senha, String nome, Endereco end, String estadoCivil, String dataNascimento)
 	{	
 		CPF = cPF;
@@ -16,6 +16,7 @@ public class Pessoa {
 		this.end = end;
 		this.estadoCivil = estadoCivil;
 		this.dataNascimento = dataNascimento;
+		this.ativa = true;
 	}
 	public String getCPF() {
 		return CPF;
@@ -55,5 +56,12 @@ public class Pessoa {
 	public String getSenha()
 	{
 		return this.senha;
+	}
+	public boolean getAtiva()
+	{
+		return this.ativa;
+	}
+	public void setAtiva(boolean ativa){
+		this.ativa = ativa;
 	}
 }

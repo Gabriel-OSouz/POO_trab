@@ -8,9 +8,8 @@ public class Gerente extends Funcionario {
 	public Gerente(String cPF,String senha, String nome, Endereco end, String estadoCivil, String dataNascimento, String cPTS,
 			String rG, char sexo, String cargo, double salario,String dataIngresso, String numAgencia,
 			boolean possuiCurso) {
-		super(cPF,senha, nome, end, estadoCivil, dataNascimento, cPTS, rG, sexo, cargo, salario);
+		super(cPF,senha, nome, end, estadoCivil, dataNascimento, cPTS, rG, sexo, cargo, salario, numAgencia);
 		this.dataIngresso = dataIngresso;
-		this.numAgencia = numAgencia;
 		this.possuiCurso = possuiCurso;
 	}
 	public String getDataIngresso() {

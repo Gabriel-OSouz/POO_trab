@@ -5,11 +5,11 @@ public class Endereco {
 	private String CEP;
 	private String cidade;
 	private String bairro;
-	private int num;
+	private String num;
 	private String complemento;
 	private String estado;
 	
-	public Endereco(String logradouro, String cEP, String cidade, String bairro, int num, String complemento,
+	public Endereco(String logradouro, String cEP, String cidade, String bairro, String num, String complemento,
 			String estado) {
 		super();
 		this.logradouro = logradouro;
@@ -44,10 +44,10 @@ public class Endereco {
 	public void setBairro(String bairro) {
 		this.bairro = bairro;
 	}
-	public int getNum() {
+	public String getNum() {
 		return num;
 	}
-	public void setNum(int num) {
+	public void setNum(String num) {
 		this.num = num;
 	}
 	public String getComplemento() {

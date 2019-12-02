@@ -1,0 +1,1 @@
+702,123,Rogerio,Logradouro,CEP,Uberlandia,Bairro,123,Comple,MG,Casado,Ontem,Cpts,rg,m,Chefe,10000.0,HJ,Agencia,true
