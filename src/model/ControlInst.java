@@ -8,7 +8,8 @@ import java.io.FileWriter;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.FileNotFoundException;
-
+import java.util.List;
+import java.util.Arrays;
 
 
 
@@ -103,8 +104,11 @@ public class ControlInst
 				String alvo[] = line.split(",");
 				if(alvo[0].equals(cpfCliente)&&alvo[12].equals("true")){
 					reader.close();
-					return new Cliente(alvo[0],alvo[1],alvo[2], new Endereco(alvo[3],alvo[4],alvo[5],alvo[6],alvo[7],alvo[8],alvo[9]), alvo[10],alvo[11],alvo[13],alvo[14]);
-			
+					Cliente c = new Cliente(alvo[0],alvo[1],alvo[2], new Endereco(alvo[3],alvo[4],alvo[5],alvo[6],alvo[7],alvo[8],alvo[9]), alvo[10],alvo[11],alvo[13],alvo[14]);
+					String[] list = alvo[15].split(".");
+					List<String> lista = Arrays.asList(list);
+					c.setContas(new ArrayList<String>(lista));
+					return c;
 				}
 			}
 		}catch(IOException ex){

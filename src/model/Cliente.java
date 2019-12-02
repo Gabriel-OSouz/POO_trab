@@ -1,9 +1,10 @@
 //package POO_trab.src.model;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Cliente extends Pessoa {
-	private ArrayList<Integer> contas;
+	private ArrayList<String> contas = new ArrayList<String>();
 	private  String numAgencia;
 	private String escolaridade;
 	
@@ -13,16 +14,19 @@ public class Cliente extends Pessoa {
 		this.numAgencia = numAgencia;
 		this.escolaridade = escolaridade;
 	}
-	public ArrayList<Integer> getContas() {
+	public ArrayList<String> getContas() {
 		return contas;
 	}
-	public void setContas(ArrayList<Integer> contas) {
-		this.contas = contas;
+	public void setContas(ArrayList<String> contas) {
+		for(Iterator<String> it = contas.iterator(); it.hasNext();){
+			this.contas.add((String)it.next());
+		}
+		
 	}
-	public void addConta(int numConta) {
+	public void addConta(String numConta) {
 		this.contas.add(numConta);
 	}
-	public void removeConta(int numConta) {
+	public void removeConta(String numConta) {
 		this.contas.remove(numConta);
 	}
 	public String getNumAgencia() {

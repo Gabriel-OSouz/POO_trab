@@ -86,6 +86,13 @@ public class CadastraArq{
 	    this.dados.append(ob.getNumAgencia());
 	    this.dados.append(",");
 	    this.dados.append(ob.getEscolaridade());
+	    this.dados.append(",");
+	    StringBuilder sb = new StringBuilder();
+	    for(String s : ob.getContas()){
+		    sb.append(s);
+		    sb.append(".");
+	    }
+	    this.dados.append(sb);
     }
     public void cadastraConta(Conta ob)
     {
